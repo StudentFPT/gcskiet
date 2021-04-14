@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>INVOICE</title>
+    <link rel="stylesheet" href="./jquery mobile 1.4.5/jquery.mobile-1.4.5.css">
+    <script src="./jquery mobile 1.4.5/jquery-1.11.1.min.js"></script>
+    <script src="./jquery mobile 1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
     <h2>INVOICE - ATN COMPANY</h2>
