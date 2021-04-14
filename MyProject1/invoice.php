@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JQuery Mobile Lab 2</title>
 
     <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="jquery.mobile-1.4.5/jquery-1.11.1.min.js"></script>
