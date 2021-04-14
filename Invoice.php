@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    <h2>INVOICE - ATN COMPANY</h2>
+    <div class="container">
+        <h2>INVOICE - ATN COMPANY</h2>
     <p>This form is filled every time a customer purchases an item</p>
     <form action="process_form.php" method="post">
         <p>
@@ -38,6 +39,9 @@
 
         
     </form>
+    </div>
+
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
