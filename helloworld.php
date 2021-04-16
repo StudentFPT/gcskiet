@@ -5,7 +5,7 @@
     <h1>Sale revenue</h1>;
 <?php
 
-    echo "SUPPPPPPP";
+    echo "SUPPPPPPP"
 ?>
 
 <?php
@@ -17,7 +17,7 @@
             <li><a href="#">TV</a></li>
             <li><a href="#">Washing machine</a><p>Sale revenue: $revenue</p></li>
             <li><a href="#">Microwave</a><p>Sale revenue: $revenue</p></li>
-            <li><a href="#">Refridgerator</a><p>Sale revenue: </p></li>
+            <li><a href="#">Refridgerator</a><p>Sale revenue: $revenue + $revenue</p></li>
         </ul>
     </nav>
     XYZ;
