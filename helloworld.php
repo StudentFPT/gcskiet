@@ -2,7 +2,7 @@
 <html>
 <body>
     
-    <h1>Sale revenue</h1>;
+    <h1>Sale revenue</h1>
 <?php
 
     echo "SUPPPPPPP"
