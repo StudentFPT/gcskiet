@@ -2,22 +2,26 @@
 <html>
 <body>
     
-    <h1>My first PHP script!</h1>;
+    <h1>Sale revenue</h1>;
 <?php
 
-    echo "Hello World";
+    echo "SUPPPPPPP";
 ?>
 
 <?php
-    echo "<nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">WorldPress</a></li>
-                <li><a href="#">Web Design</a></li>
-            </ul>
-        </nav>"
-        XYZ;
-        echo $html_content;
+    $revenue = 1 + 2 + 3;
+    $html_content = <<<XYZ
+    "<nav>
+        <ul>
+            <li><a href="#">Air conditioner</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Washing machine</a><p>Sale revenue: $revenue</p></li>
+            <li><a href="#">Microwave</a><p>Sale revenue: $revenue</p></li>
+            <li><a href="#">Refridgerator</a><p>Sale revenue: </p></li>
+        </ul>
+    </nav>
+    XYZ;
+    echo $html_content;
 ?>
 
 </body>
