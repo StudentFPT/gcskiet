@@ -33,15 +33,26 @@
         $port_param_str = "port=".$port;
         $user_param_str = "user=".$user;
         $pass_param_str = "pass=".$password;
-        $sslmode_param_str = "ssl require";
+        $sslmode_param_str = "sslmode= require";
 
         $connection_string = $host_param_str + $dbname_param_str + $port_param_str + $user_param_str + $pass_param_str + $sslmode_param_str;
+        
         $connetion = pg_connect($connection_string);
-
         if ($connection === false){
             die("ERROR: Could not connect to the database");
         }else{
             echo "SUCCESS: Connection to Heroku Postgres has been established"
+
+            $product_query = "INSERT INTO public. "Product" (id,product_name,category,desciption,price) 
+            VALUES (\"" .$id. "," .$name. "," .$cat. "," .$desc. "\"," .$price.")";
+
+            echo "<p>" .$product_query. "<p>";
+
+            if (pg_query($connection, $product_query)){
+                echo "<p>Record is added successfully. A new product is created</p>";
+            }else{
+                echo "<p>ERROR: Could not execute query</p>";
+            }
         }
     ?>
 </html>
