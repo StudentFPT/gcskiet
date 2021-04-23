@@ -12,8 +12,8 @@
         $name = $_REQUEST["name"];
         $cat = $_REQUEST["cat"];
         $date = $_REQUEST["date"]
-	    $price = $_REQUEST['price'];
-	    $desc = $_REQUEST['desc'];
+	    $price = $_REQUEST["price"];
+	    $desc = $_REQUEST["desc"];
 
         echo $id;
         echo $name;
@@ -43,18 +43,19 @@
         if ($connection === false){
             die("ERROR: Could not connect to the database");
         }else{
-            echo "SUCCESS: Connection to Heroku Postgres has been established"
+            echo "SUCCESS: Connection to Heroku Postgres has been established";
 
             $product_query = 'INSERT INTO public."Product"(id,product_name,category,descriptions,price) 
             VALUES (\''.$id.'\',\''.$name.'\',\''.$cat.'\',\''.$desc.'\','.$price.')';
 
-            echo "<p>" .$product_query. "<p>";
+            echo '<p>' .$product_query. '</p>';
 
-            if (pg_query($connection, $product_query)){
-                echo "<p>Record is added successfully. A new product is created</p>";
-            }else{
-                echo "<p>ERROR: Could not execute query</p>";
-            }
+
+		    if (pg_query($connection,$product_query)){
+			    echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
+		    }else{
+			    echo '<p>ERROR: Could not execute query</p>';
+		    }
         }
     ?>
 </html>
