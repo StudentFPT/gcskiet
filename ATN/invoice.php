@@ -61,15 +61,16 @@
 			</form>
 		</div>
 
-		<div data-role="footer" data-position="fixed">
-			<h4>Navigation</h4>
-					<div data-role="navbar">
-						<ul>
-							<li><a href="#atn_home" data-role="button" >Home</a></li>
-							<li><a href="#invoice" data-role="button" >Invoice</a></li>
-						</ul>
-					</div>  
-		</div>
+		<script>
+			$(document).ready(function () {
+				$("#btnAddProduct").click(function () {
+					var newli = 
+						"<li>Product ID: <input name='invoice_productID' type='text'> Quantity: <input name=type='text'></li>";
+						$("ul.content-list").append(newli);
+						$("ul.content-list").listview("refresh");
+				})
+			})
+		</script>
 	</div> 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
