@@ -32,10 +32,12 @@
         $dbname_param_str = "dbname=".$database;
         $port_param_str = "port=".$port;
         $user_param_str = "user=".$user;
-        $pass_param_str = "pass=".$password;
+        $pass_param_str = "password=".$password;
         $sslmode_param_str = "sslmode= require";
 
-        $connection_string = $host_param_str + $dbname_param_str + $port_param_str + $user_param_str + $pass_param_str + $sslmode_param_str;
+        $connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
+        
+        echo "<p>".$connection_string."</p>";
         
         $connetion = pg_connect($connection_string);
         if ($connection === false){
