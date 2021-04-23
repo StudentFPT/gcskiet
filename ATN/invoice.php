@@ -20,31 +20,42 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<form action="product_create.php" method="post">
+			<form action="invoice_create.php" method="post">
+                <h3>Customer information</h3>
 				<p>
-					<label for="productid">Product ID<sup>*</sup></label>
-					<input type="text" name="id" id="productid">
+					<label for="customerID">Customer ID<sup>*</sup></label>
+					<input type="text" name="customer_ID" id="customerID">
 				</p>
 				<p>
-					<label for="productname">Product Name<sup>*</sup></label>
-					<input type="text" name="name" id="productname">
+					<label for="customerName">Customer Name<sup>*</sup></label>
+					<input type="text" name="customer_Name" id="customerName">
+				</p>
+
+                <h3>Invoice Information</h3>
+				<p>
+					<label for="invoiceID">Invoice ID</label>
+					<input type="text" name="invoice_ID" id="invoiceID" />
 				</p>
 				<p>
-					<label for="productcat">Category</label>
-					<input type="text" name="cat" id="productcat">
+					<label for="invoiceDate">Invoice Date</label>
+					<input type="date" name="invoice_Date" id="invoiceDate" />
 				</p>
-				<p>
-					<label for="date">Date</label>
-					<input type="date" name="date" id="date">
-				</p>
-				<p>
-					<label for="price">Price</label>
-					<input type="text" name="price" id="price">
-				</p>
-				<p>
-					<label for="description">Descriptions<sup>*</sup></label>
-					<textarea name="desc" id="description" rows="5" cols="30"></textarea>
-				</p>
+				
+                <div data-role="collapsible" data-collapsed="false">
+                    <h1>This is a collapsible list items</h1>
+                    <ul class="content-list" data-role="listview"></ul>
+                    <p>
+                        <label for="invoiceDate">Invoice Date</label>
+                        <input type="text" name="invoice_Date" id="invoiceDate" />
+                    </p>
+                </div>
+                <div data-role="collapsible" data-collapsed="false">
+                    <h4>This is a collapsible list items</h4>
+                    <ul class="content-list" data-role="listview"></ul>
+                </div>
+                
+                <button id="btnAddProduct" class="ui-btn ui-btn-inline">Add a product</button>
+                
 				<input type="submit" value="Submit">
 				<input type="reset" value="Reset">
 			</form>
