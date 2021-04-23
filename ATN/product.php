@@ -6,10 +6,10 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-	<link rel="stylesheet" href="./jquery mobile 1.4.5/jquery.mobile-1.4.5.css">
+	<link rel="stylesheet" href="jquery mobile 1.4.5/jquery.mobile-1.4.5.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="./jquery mobile 1.4.5/jquery-1.11.1.min.js"></script>
-    <script src="./jquery mobile 1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="jquery mobile 1.4.5/jquery-1.11.1.min.js"></script>
+    <script src="jquery mobile 1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body> 
 	<div data-role="page" id="atn_home">
