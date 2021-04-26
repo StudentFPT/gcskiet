@@ -55,7 +55,7 @@
 					<div data-role="navbar">
 						<ul>
 							<li><a href="#atn_home" data-role="button" >Home</a></li>
-							<li><a href="#invoice" data-role="button" >Invoice</a></li>
+							<li><a href="invoice.php" data-role="button" >Invoice</a></li>
 						</ul>
 					</div>  
 		</div>
