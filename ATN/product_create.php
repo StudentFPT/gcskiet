@@ -9,12 +9,12 @@ echo "This is income by different product category";
 ?>
 
 <?php
-	$id = $_REQUEST['id'];
-	$name = $_REQUEST['name'];
-	$cat = $_REQUEST['cat'];
-	$date = $_REQUEST['date'];
-	$price = $_REQUEST['price'];
-	$desc = $_REQUEST['desc'];
+	$id = $_REQUEST["id"];
+	$name = $_REQUEST["name"];
+	$cat = $_REQUEST["cat"];
+	$date = $_REQUEST["date"];
+	$price = $_REQUEST["price"];
+	$desc = $_REQUEST["desc"];
 	
 	echo $id;
 	echo $name;
