@@ -42,14 +42,6 @@
 				</p>
 				
                 <div data-role="collapsible" data-collapsed="false">
-                    <h1>This is a collapsible list items</h1>
-                    <ul class="content-list" data-role="listview"></ul>
-                    <p>
-                        <label for="invoiceDate">Invoice Date</label>
-                        <input type="text" name="invoice_Date" id="invoiceDate" />
-                    </p>
-                </div>
-                <div data-role="collapsible" data-collapsed="false">
                     <h4>This is a collapsible list items</h4>
                     <ul class="content-list" data-role="listview"></ul>
                 </div>
