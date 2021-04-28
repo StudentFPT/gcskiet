@@ -53,6 +53,16 @@
 			</form>
 		</div>
 
+		<div data-role="footer" data-position="fixed">
+			<h4>Navigation</h4>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#atn_home" data-role="button" >Home</a></li>
+							<li><a href="invoice.php" data-role="button" >Invoice</a></li>
+						</ul>
+					</div>  
+		</div>
+		
 		<script>
 			$(document).ready(function () {
 				$("#btnAddProduct").click(function () {
