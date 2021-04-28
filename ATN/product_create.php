@@ -7,7 +7,7 @@
 <?php
 echo "This is income by different product category";
 ?>
-<!--result:Hello World! kieu text-->
+
 <?php
 	$id = $_REQUEST["id"];
 	$name = $_REQUEST["name"];
@@ -29,7 +29,7 @@ echo "This is income by different product category";
         $port = "5432";
         $password = "88ba687e8bbe5cbd0741417086045a25cc5bb0d1b3d35ab35cfea4c48680e1fa";
 
-        $host_param_str = "host=".$host;
+    $host_param_str = "host=".$host;
 	$dbname_param_str = " dbname=".$database;
 	$port_param_str = " port=".$port;
 	$user_param_str = " user=".$user;
