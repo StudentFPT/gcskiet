@@ -51,13 +51,13 @@
         }else{
             echo "SUCCESS: Connection to Heroku Postgres has been established";
 
-            $product_query = 'INSERT INTO public."Customer"(Email,Id,Name,Phone,Address) 
+            $invoice_query = 'INSERT INTO public."Customer"(Email,Id,Name,Phone,Address) 
             VALUES (\''.$cusid.'\',\''.$cusname.'\',\''."Default".'\',\''."Default".'\','."Default".')';
 
-            echo '<p>' .$product_query. '</p>';
+            echo '<p>' .$invoice_query. '</p>';
 
 
-		    if (pg_query($connection,$product_query)){
+		    if (pg_query($connection,$invoice_query)){
 			    echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
 		    }else{
 			    echo '<p>ERROR: Could not execute query</p>';
