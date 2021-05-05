@@ -27,6 +27,13 @@ echo "This is Customer";
         $port = "5432";
         $password = "88ba687e8bbe5cbd0741417086045a25cc5bb0d1b3d35ab35cfea4c48680e1fa";
 
+        $host_param_str = "host=".$host;
+        $dbname_param_str = "dbname=".$database;
+        $port_param_str = "port=".$port;
+        $user_param_str = "user=".$user;
+        $pass_param_str = "password=".$password;
+        $sslmode_param_str = "sslmode= require";
+
 	$connection_string = "host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require";
 
 	$connection = pg_connect($connection_string);
