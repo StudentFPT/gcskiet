@@ -15,8 +15,8 @@
 	
 	<div data-role="page" id="atn_home">
 		<div data-role="header">
-			<h2>PRODUCT - ATN COMPANY</h2>
-			<p>Please input a new product here</p>
+			<h2>INVOICE - ATN COMPANY</h2>
+			<p>Please input invoice here</p>
 		</div>
 
 		<div data-role="main" class="ui-content">
