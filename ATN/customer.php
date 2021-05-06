@@ -12,7 +12,7 @@
     <script src="jquery mobile 1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body> 	
-		<div data-role="page" id="atn_home">
+		
 			<div data-role="header">
 				<h2>CUSTOMER - ATN COMPANY</h2>
 				<p>This form is filled everytime a customer purchases an item</p>
@@ -47,14 +47,14 @@
 			<h4>Navigation</h4>
 					<div data-role="navbar">
 						<ul>
-							<li><a href="#atn_home" data-role="button" >Home</a></li>
+							<li><a href="product.php" data-role="button" >Home</a></li>
 							<li><a href="invoice.php" data-role="button" >Invoice</a></li>
 							<li><a href="customer.php" data-role="button" >Customer</a></li>
 							<li><a href="category.php" data-role="button" >Categories</a></li>
 						</ul>
 					</div>  
 			</div>
-	</div> 
+	
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
