@@ -47,7 +47,7 @@ echo "This is Customer";
 	{
 		echo "SUCCESS: Connection to Heroku Postgres has been established";
 
-		$customer_query = 'INSERT INTO public."Customer"(Email,Id,"Name",Phone,"Address") VALUES 
+		$customer_query = 'INSERT INTO public."Customer"("Email" , "Id", "Name", "Phone", "Address") VALUES 
 		(\''.$email.'\',\''.$id.'\',\''.$name.'\',\''.$phone.'\',\''.$address.'\')';
 
 		echo '<p>'.$customer_query.'</p>';
