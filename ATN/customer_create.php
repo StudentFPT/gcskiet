@@ -38,7 +38,7 @@ echo "This is Customer";
 	$connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
 
 	echo "<p>".$connection_string."</p>";
-	
+
 	$connection = pg_connect($connection_string);
 
 	if ($connection === false){
@@ -47,8 +47,8 @@ echo "This is Customer";
 	{
 		echo "SUCCESS: Connection to Heroku Postgres has been established";
 
-		$customer_query = 'INSERT INTO public."Customer"(Email,Id,Name,Phone,Address) VALUES 
-		(\''.$id.'\',\''.$email.'\',\''.$name.'\',\''.$phone.'\','.$address.')';
+		$customer_query = 'INSERT INTO public."Customer"(Email,Id,"Name",Phone,"Address") VALUES 
+		(\''.$id.'\',\''.$email.'\',\''.$name.'\',\''.$phone.'\',\''.$address.'\')';
 
 		echo '<p>'.$customer_query.'</p>';
 
