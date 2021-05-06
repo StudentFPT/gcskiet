@@ -57,7 +57,7 @@
 							<li><a href="product.php" data-role="button" >Home</a></li>
 							<li><a href="invoice.php" data-role="button" >Invoice</a></li>
 							<li><a href="customer.php" data-role="button" >Customer</a></li>
-							<li><a href="category.php" data-role="button" >Categories</a></li>
+							<li><a href="category.php" data-role="button" >Category</a></li>
 						</ul>
 					</div>  
 		</div>
