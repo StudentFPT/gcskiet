@@ -26,13 +26,7 @@
 				</ul>
 			</div>
 			
-			<!--			
-			<ul class="content-list">
-				<li><a href="#page2" >This is link 1</a></li>
-				<li><a href="#page3" >This is link 2</a></li>
-				   	
-			</ul>
-			-->
+			
 
 			<a id="btnAddApple" href="#" class="ui-btn ui-btn-inline">Add an Apple</a>
 			<button id="btnAddOrange" class="ui-btn ui-btn-inline">Add an Orange</button>
