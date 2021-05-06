@@ -17,12 +17,12 @@
 		
 			<form action="customer_create.php" method="post">
 				<p>
-					<label for="customerid">Customer ID<sup>*</sup></label>
-					<input type="text" name="id" id="customerid">
-				</p>
-				<p>
 					<label for="customeremail">Customer Email<sup>*</sup></label>
 					<input type="text" name="email" id="customeremail">
+				</p>
+				<p>
+					<label for="customerid">Customer ID<sup>*</sup></label>
+					<input type="text" name="id" id="customerid">
 				</p>
 				<p>
 					<label for="customername">Customer Name</label>
