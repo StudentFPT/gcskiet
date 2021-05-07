@@ -46,7 +46,7 @@
                     <ul class="content-list" data-role="listview"></ul>
                 </div>
                 
-                <a id="btnAddProduct" class="ui-btn ui-btn-inline">Add a product</a>
+                <a id="btnAddProduct" class="ui-btn ui-btn-inline" onclick="addFuntion()">Add a product</a>
                 
 				<button type="submit" value="Submit">Submit</button>
 				<input type="reset" value="Reset">
@@ -65,10 +65,11 @@
 		</div>
 		
 		<script>
-			$(document).ready(function () {
-				$("#btnAddProduct").click(function () {
-					var newli = 
-						"<li>Product ID: <input name='invoice_product_id[]' type='text'> Quantity: <input name='invoice_product_quantity[]' type='text'></li>";
+			function addFuntion(){
+					var newli = `
+						<li>Product ID: <input name="invoice_product_id[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text">
+						</li>;
+						`
 						$("ul.content-list").append(newli);
 						$("ul.content-list").listview("refresh");
 				})

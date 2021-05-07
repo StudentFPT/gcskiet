@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
-    echo "<p>This is the invoice submssion<p>";
+    echo "This is the invoice submssion";
     ?>
 
     <?php
