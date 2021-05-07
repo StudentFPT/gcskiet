@@ -49,8 +49,7 @@
         $pass_param_str = "password=".$password;
         $sslmode_param_str = "sslmode= require";
 
-        //$connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
-        $connection_string = "host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require";
+        $connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
 
         echo "<p>".$connection_string."</p>";
         
