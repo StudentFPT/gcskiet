@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1>Sale revenue by Category</h1>
+        
     </body>
 
     <?php
@@ -24,9 +24,16 @@
         echo $invoice_product_id;
         echo $invoice_product_quantity;
 
+        $product_id = "";
         for ($i = 0; $i < count($invoice_product_id); $i++){
-            echo "<p>". $invoice_product_id[$i]."
-            ".$invoice_product_quantity[$i]."</p>";
+            $product_id .= $invoice_product_id[$i].",";
+            /*echo "<p>". $invoice_product_id[$i]."
+            ".$invoice_product_quantity[$i]."</p>";*/
+        }
+
+        $product_quantity = "";
+        for ($i = 0; $i < count($invoice_product_quantity); $i++){
+            $product_quantity .= $invoice_product_quantity[$i].",";
         }
 
         $host="ec2-3-233-43-103.compute-1.amazonaws.com";
@@ -42,8 +49,8 @@
         $pass_param_str = "password=".$password;
         $sslmode_param_str = "sslmode= require";
 
-        //$connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
-        $connection_string = "host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require";
+        $connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
+        //$connection_string = "host=".$host." dbname=".$database." user=".$user." port=".$port." password=".$password." sslmode=require";
 
         echo "<p>".$connection_string."</p>";
         
