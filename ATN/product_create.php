@@ -59,10 +59,7 @@ echo "This is income by different product category";
 		else{
 			echo '<p>ERROR: Could not execute query</p>';
 		}
-
-	}
-	
+	}	
 ?>
-
 </body>
 </html>
