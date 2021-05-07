@@ -24,21 +24,21 @@
                 <h3>Customer information</h3>
 				<p>
 					<label for="customerID">Customer ID<sup>*</sup></label>
-					<input type="text" name="customer_ID" id="customerID">
+					<input type="text" name="customer_id" id="customerID">
 				</p>
 				<p>
 					<label for="customerName">Customer Name<sup>*</sup></label>
-					<input type="text" name="customer_Name" id="customerName">
+					<input type="text" name="customer_name" id="customerName">
 				</p>
 
                 <h3>Invoice Information</h3>
 				<p>
 					<label for="invoiceID">Invoice ID</label>
-					<input type="text" name="invoice_ID" id="invoiceID" />
+					<input type="text" name="invoice_id" id="invoiceID" />
 				</p>
 				<p>
 					<label for="invoiceDate">Invoice Date</label>
-					<input type="date" name="invoice_Date" id="invoiceDate" />
+					<input type="date" name="invoice_date" id="invoiceDate" />
 				</p>
 				
                 <div data-role="collapsible" data-collapsed="false">
@@ -68,7 +68,7 @@
 			$(document).ready(function () {
 				$("#btnAddProduct").click(function () {
 					var newli = 
-						"<li>Product ID: <input name='invoice_productid[]' type='text'> Quantity: <input name='invoice_product_quantity[]' type='text'></li>";
+						"<li>Product ID: <input name='invoice_product_id[]' type='text'> Quantity: <input name='invoice_product_quantity[]' type='text'></li>";
 						$("ul.content-list").append(newli);
 						$("ul.content-list").listview("refresh");
 				})

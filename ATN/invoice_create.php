@@ -61,7 +61,7 @@
             echo "SUCCESS: Connection to Heroku Postgres has been established";
 
             $invoice_query = 'INSERT INTO public."invoice"("customer_id" , "customer_name" , "invoice_id" , "invoice_date" , "invoice_product_id" ,"invoice_product_quantity") VALUES 
-            (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$invoice_product_id.'\',\''.$invoice_product_quantity.'\')';
+            (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$product_id.'\',\''.$product_quantity.'\')';
 
             echo '<>'.$invoice_query.'</>';
 
