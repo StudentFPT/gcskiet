@@ -24,8 +24,6 @@
         $product_id = "";
         for ($i = 0; $i < count($invoice_product_id); $i++){
             $product_id .= $invoice_product_id[$i].",";
-            /*echo "<p>". $invoice_product_id[$i]."
-            ".$invoice_product_quantity[$i]."</p>";*/
         }
 
         $product_quantity = "";
@@ -57,17 +55,17 @@
         }else{
             echo "SUCCESS: Connection to Heroku Postgres has been established";
 
-            $invoice_query = 'INSERT INTO public."invoice"("customer_id" , "customer_name" , "invoice_id" , "invoice_date" , "invoice_product_id" ,"invoice_product_quantity") VALUES 
-            (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$product_id.'\',\''.$product_quantity.'\')';
+            // $invoice_query = 'INSERT INTO public."invoice"("customer_id" , "customer_name" , "invoice_id" , "invoice_date" , "invoice_product_id" ,"invoice_product_quantity") VALUES 
+            // (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$product_id.'\',\''.$product_quantity.'\')';
 
-            echo '<>'.$invoice_query.'</>';
+            // echo '<>'.$invoice_query.'</>';
 
 
-		    if (pg_query($connection,$invoice_query)){
-			    echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
-		    }else{
-			    echo '<p>ERROR: Could not execute query</p>';
-		    }
+		    // if (pg_query($connection,$invoice_query)){
+			//     echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
+		    // }else{
+			//     echo '<p>ERROR: Could not execute query</p>';
+		    // }
         }
     ?>
     
