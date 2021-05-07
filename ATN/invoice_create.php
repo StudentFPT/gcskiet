@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body>
 <?php
     echo "<p>This is the invoice submssion<p>";
     ?>
@@ -71,6 +70,5 @@
 		    }
         }
     ?>
-</body>
     
 </html>
