@@ -21,17 +21,17 @@
         echo $invoice_product_id;
         echo $invoice_product_quantity;
 
-        $product_id = "";
-        for ($i = 0; $i < count($invoice_product_id); $i++){
-            $product_id .= $invoice_product_id[$i].",";
-            /*echo "<p>". $invoice_product_id[$i]."
-            ".$invoice_product_quantity[$i]."</p>";*/
-        }
+        // $product_id = "";
+        // for ($i = 0; $i < count($invoice_product_id); $i++){
+        //     $product_id .= $invoice_product_id[$i].",";
+        //     /*echo "<p>". $invoice_product_id[$i]."
+        //     ".$invoice_product_quantity[$i]."</p>";*/
+        // }
 
-        $product_quantity = "";
-        for ($i = 0; $i < count($invoice_product_quantity); $i++){
-            $product_quantity .= $invoice_product_quantity[$i].",";
-        }
+        // $product_quantity = "";
+        // for ($i = 0; $i < count($invoice_product_quantity); $i++){
+        //     $product_quantity .= $invoice_product_quantity[$i].",";
+        // }
 
         $host="ec2-3-233-43-103.compute-1.amazonaws.com";
         $database="daoeb2h1i4gref";
