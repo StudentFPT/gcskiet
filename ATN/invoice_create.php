@@ -64,7 +64,7 @@
             $invoice_query = 'INSERT INTO public."invoice"("customer_id" , "customer_name" , "invoice_id" , "invoice_date" , "invoice_product_id" ,"invoice_product_quantity") VALUES 
             (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$invoice_product_id.'\',\''.$invoice_product_quantity.'\')';
 
-            echo '<p>' .$invoice_query. '</p>';
+            echo '<>'.$invoice_query.'</>';
 
 
 		    if (pg_query($connection,$invoice_query)){
