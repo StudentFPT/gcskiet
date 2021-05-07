@@ -53,7 +53,7 @@
 
         echo "<p>".$connection_string."</p>";
         
-        $connetion = pg_connect($connection_string);
+        $connection = pg_connect($connection_string);
         
         if ($connection === false){
             die("ERROR: Could not connect to the database");
