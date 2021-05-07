@@ -66,7 +66,9 @@
 		<script>
 			function addProduct(){
 					var newli = `
-						<li>Product ID: <input name="invoice_product_id[]" type="text"> Quantity: <input name="invoice_product_quantity[]" type="text">
+						<li>
+							Product ID: <input name = "invoice_product_id[]" type = "text"> 
+							Quantity: <input name = "invoice_product_quantity[]" type = "text">
 						</li>`;
 						
 						$("ul.content-list").append(newli);
