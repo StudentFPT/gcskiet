@@ -46,7 +46,7 @@
 
         $connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
 
-        echo "<p>".$connection_string."</p>";
+        
         
         $connection = pg_connect($connection_string);
         
@@ -61,11 +61,11 @@
             echo '<p>'.$invoice_query.'</p>';
 
 
-		    if (pg_query($connection,$invoice_query)){
-			    echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
-		    }else{
-			    echo '<p>ERROR: Could not execute query</p>';
-		    }
+		    // if (pg_query($connection,$invoice_query)){
+			//     echo '<p>SUCCESS: Record is added succesfully. A new product is created</p>';
+		    // }else{
+			//     echo '<p>ERROR: Could not execute query</p>';
+		    // }
         }
     ?>
     
