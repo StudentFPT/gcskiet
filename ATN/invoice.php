@@ -45,10 +45,10 @@
                     <ul class="content-list" data-role="listview"></ul>
                 </div>
                 
-                <a id="btnAddProduct" class="ui-btn ui-btn-inline" onclick="addProduct()">Add a product</a>
+                <a class="ui-btn ui-btn-inline" onclick="addProduct()">Add a product</a>
                 
 				<button type="submit" value="Submit">Submit</button>
-				<input type="reset" value="Reset">
+				<input type="reset" value="Reset"/>
 			</form>
 		</div>
 
