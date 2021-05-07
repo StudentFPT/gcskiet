@@ -46,9 +46,9 @@
                     <ul class="content-list" data-role="listview"></ul>
                 </div>
                 
-                <button id="btnAddProduct" class="ui-btn ui-btn-inline">Add a product</button>
+                <a id="btnAddProduct" class="ui-btn ui-btn-inline">Add a product</a>
                 
-				<input type="submit" value="Submit">
+				<button type="submit" value="Submit"></button>
 				<input type="reset" value="Reset">
 			</form>
 		</div>
