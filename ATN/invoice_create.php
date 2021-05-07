@@ -38,11 +38,11 @@
         $password = "88ba687e8bbe5cbd0741417086045a25cc5bb0d1b3d35ab35cfea4c48680e1fa";
 
         $host_param_str = "host=".$host;
-        $dbname_param_str = "dbname=".$database;
-        $port_param_str = "port=".$port;
-        $user_param_str = "user=".$user;
-        $pass_param_str = "password=".$password;
-        $sslmode_param_str = "sslmode= require";
+	    $dbname_param_str = " dbname=".$database;
+	    $port_param_str = " port=".$port;
+	    $user_param_str = " user=".$user;
+	    $pass_param_str = " password=".$password;
+	    $sslmode_param_str = " sslmode=require";
 
         $connection_string = $host_param_str.$dbname_param_str.$port_param_str.$user_param_str.$pass_param_str.$sslmode_param_str;
 
@@ -58,7 +58,7 @@
             // $invoice_query = 'INSERT INTO public."invoice"("customer_id" , "customer_name" , "invoice_id" , "invoice_date" , "invoice_product_id" ,"invoice_product_quantity") VALUES 
             // (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$product_id.'\',\''.$product_quantity.'\')';
 
-            // echo '<>'.$invoice_query.'</>';
+            // echo '<p>'.$invoice_query.'</p>';
 
 
 		    // if (pg_query($connection,$invoice_query)){
