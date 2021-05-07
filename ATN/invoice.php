@@ -48,7 +48,7 @@
                 
                 <a id="btnAddProduct" class="ui-btn ui-btn-inline">Add a product</a>
                 
-				<button type="submit" value="Submit"></button>
+				<button type="submit" value="Submit">Submit</button>
 				<input type="reset" value="Reset">
 			</form>
 		</div>
