@@ -17,10 +17,12 @@
         $invoice_product_id = $_REQUEST["invoice_product_id"];
         $invoice_product_quantity = $_REQUEST["invoice_product_quantity"];
 
-        echo "<p>".$cusid. "</p>";
-        echo "<p>".$cusname. "</p>";
-        echo "<p>".$invoiceid. "</p>";
-        echo "<p>".$invoicedate. "</p>";
+        echo $cusid;
+        echo $cusname;
+        echo $invoiceid;
+        echo $invoicedate;
+        echo $invoice_product_id;
+        echo $invoice_product_quantity;
 
         for ($i = 0; $i < count($invoice_product_id); $i++){
             echo "<p>". $invoice_product_id[$i]."
