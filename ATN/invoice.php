@@ -69,7 +69,7 @@
 			$(document).ready(function () {
 				$("#btnAddProduct").click(function () {
 					var newli = 
-						"<li>Product ID: <input name='invoice_productID' type='text'> Quantity: <input name=type='text'></li>";
+						"<li>Product ID: <input name='invoice_productid[]' type='text'> Quantity: <input name='invoice_product_quantity[]' type='text'></li>";
 						$("ul.content-list").append(newli);
 						$("ul.content-list").listview("refresh");
 				})

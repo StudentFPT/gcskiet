@@ -14,7 +14,7 @@
         $invoiceid = $_REQUEST["invoice_id"];
         $invoicedate = $_REQUEST["invoice_date"];
         
-        $invoice_product_id = $_REQUEST["invoice_productid"];
+        $invoice_product_id = $_REQUEST["invoice_product_id"];
         $invoice_product_quantity = $_REQUEST["invoice_product_quantity"];
 
         echo "<p>".$cusid. "</p>";
@@ -51,8 +51,8 @@
         }else{
             echo "SUCCESS: Connection to Heroku Postgres has been established";
 
-            $invoice_query = 'INSERT INTO public."Customer"(Email,Id,Name,Phone,Address) 
-            VALUES (\''.$cusid.'\',\''.$cusname.'\',\''."Default".'\',\''."Default".'\','."Default".')';
+            $invoice_query = 'INSERT INTO public."invoice"(customer_id, customer_name, invoice_id, invoice_date, invoice_product_id, invoice_product_quantity) VALUES 
+            (\''.$cusid.'\',\''.$cusname.'\',\''.$invoiceid.'\',\''.$invoicedate.'\',\''.$invoice_product_id.'\','.$invoice_product_quantity.')';
 
             echo '<p>' .$invoice_query. '</p>';
 
